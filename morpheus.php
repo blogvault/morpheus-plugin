@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP Morpheus
+Plugin Name: Morpheus
 Description: Redirects WordPress core, plugin, and theme updates to a mirror when wp.org is not reachable.
 Version: 1.0
 Author: Blogvault
@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class WP_Morpheus {
+class Morpheus {
     private $mirror_url = 'https://morpheus.blogvault.net';
 
     public function __construct() {
@@ -192,4 +192,4 @@ class WP_Morpheus {
 		}
 }
 
-new WP_Morpheus();
+new Morpheus();
